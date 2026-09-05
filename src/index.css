@@ -1,0 +1,79 @@
+@import 'leaflet/dist/leaflet.css';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700;800;900&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FBF7EE;
+    color: #1C1917;
+    font-family: 'Outfit', system-ui, sans-serif;
+    background-image: radial-gradient(#D97706 0.4px, transparent 0.4px), radial-gradient(#0D9488 0.4px, #FBF7EE 0.4px);
+    background-size: 16px 16px;
+    background-position: 0 0, 8px 8px;
+    background-opacity: 0.15;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom Retro Revival Utilities */
+.retro-border {
+  border: 2px solid #1C1917;
+}
+
+.retro-border-lg {
+  border: 3px solid #1C1917;
+}
+
+.retro-shadow {
+  box-shadow: 4px 4px 0px 0px #1C1917;
+}
+
+.retro-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #1C1917;
+}
+
+.retro-shadow-lg {
+  box-shadow: 6px 6px 0px 0px #1C1917;
+}
+
+/* Vintage Paper Noise Grain Effect */
+.paper-texture {
+  background-color: #FFFDF9;
+  background-image: linear-gradient(0deg, rgba(217, 119, 6, 0.03) 0%, rgba(13, 148, 136, 0.03) 100%);
+}
+
+/* Retro Map Tile CSS Filter for 1950s Travel Poster Look */
+.retro-map-tiles .leaflet-tile-container img {
+  filter: sepia(35%) hue-rotate(-15deg) contrast(105%) saturate(120%) brightness(96%);
+}
+
+/* Custom Marker Styling */
+.retro-marker-pin {
+  width: 28px;
+  height: 28px;
+  border-radius: 50% 50% 50% 0;
+  background: #C2410C;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -14px;
+  border: 2px solid #1C1917;
+  box-shadow: 2px 2px 0px 0px #1C1917;
+}
+.retro-marker-pin::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin: 6px 0 0 6px;
+  background: #FBF7EE;
+  position: absolute;
+  border-radius: 50%;
+}

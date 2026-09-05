@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTimeline — Retro Revival Express</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈</text></svg>" />
+</head>
+<body class="min-h-screen text-stone-900 font-body relative overflow-x-hidden">
+
+  <!-- Overlapping Retro Revival Travel Posters Collage Background -->
+  <retro-poster-background></retro-poster-background>
+
+  <div id="app" class="max-w-7xl mx-auto px-4 py-6 relative z-10">
+    <!-- Retro Top Navbar -->
+    <retro-navbar></retro-navbar>
+
+    <!-- Master Time Selector -->
+    <master-time-selector></master-time-selector>
+
+    <!-- Analytics Dashboard -->
+    <analytics-dashboard></analytics-dashboard>
+
+    <!-- Interactive Retro Map View -->
+    <retro-map-view></retro-map-view>
+
+    <!-- Takeout Upload Modal -->
+    <upload-modal></upload-modal>
+
+    <!-- Filterable Places Table Modal Directory -->
+    <places-modal></places-modal>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
